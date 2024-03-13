@@ -56,12 +56,10 @@
     <!--Slider-->
     <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="3000">
@@ -74,13 +72,11 @@
                 <img src="./img/road/roadE5.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider"
-            data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider"
-            data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -88,6 +84,12 @@
 
     <!-- search start-->
     <div class="container-fluid p-5 bg-light">
+        <div>
+            <h1 class="text-center mb-5">
+                <img src="./img/user/bridge.png" alt="" srcset="">
+                Book car
+                <img src="./img/user/image.png" alt="" srcset=""></h1>
+        </div>
         <div class="row m-5">
             <div class="form-floating col-sm-3 p-0">
                 <input type="date" aria-label="Last name" class="form-control" id="floatingInput">
@@ -108,13 +110,17 @@
     </div>
 
     <!--pramotional or banners-->
-    <div class="container-fluid p-5">
+    <div class="container-fluid p-4">
         <div>
-            <h1 class="text-center">Banners</h1>
-        </div> 
+            <h1 class="text-center mb-5">
+                <img src="./img/user/bridge.png" alt="" srcset="">
+                Banners
+                <img src="./img/user/image.png" alt="" srcset=""></h1>
+        </div>
         <div class="row">
             <div class="col-1 p-0 align-self-center text-center">
-                <a href="#banner" role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-circle" style="font-size: 1.6rem;"></i></a>
+                <a href="#banner" role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-circle  text-danger"
+                        style="font-size: 1.6rem;"></i></a>
             </div>
             <div class="col-10">
                 <div id="banner" class="carousel slide carousel-fade p-0" data-bs-ride="carousel">
@@ -128,13 +134,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="3000">
-                            <img src="./img/wp/16.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/banner/banner1.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item" data-bs-interval="3000">
-                            <img src="./img/wp/17.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/banner/banner2.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item" data-bs-interval="3000">
-                            <img src="./img/wp/18.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/banner/banner3.jpg" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <!-- <button class="carousel-control-prev" type="button" data-bs-target="#banner"
@@ -150,7 +156,173 @@
                 </div>
             </div>
             <div class="col-1 p-0 align-self-center text-center">
-                <a href="#banner" role="button" data-bs-slide="next"><i class="bi bi-arrow-right-circle" style="font-size: 1.6rem;"></i></a>
+                <a href="#banner" role="button" data-bs-slide="next"><i class="bi bi-arrow-right-circle text-danger" style="font-size: 1.6rem;"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- most Pick car -->
+    <div class="container-fluid p-4">
+        <div>
+            <h1 class="text-center mb-5">
+                <img src="./img/user/bridge.png" alt="" srcset="">
+                Most pick Car
+                <img src="./img/user/image.png" alt="" srcset="">
+            </h1>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4 px-md-5 px-3">
+            <div class="col">
+                <div class="card">
+                    <img src="./img/modelCar/cargoVan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">car name</h5>
+                        <h6 class="card-title">car model name</h6>
+                        <h5 class="card-title">car price/hr</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/modelCar/cargoVan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">car name</h5>
+                        <h6 class="card-title">car model name</h6>
+                        <h5 class="card-title">car price/hr</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/modelCar/cargoVan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">car name</h5>
+                        <h6 class="card-title">car model name</h6>
+                        <h5 class="card-title">car price/hr</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/modelCar/cargoVan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">car name</h5>
+                        <h6 class="card-title">car model name</h6>
+                        <h5 class="card-title">car price/hr</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/modelCar/cargoVan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">car name</h5>
+                        <h6 class="card-title">car model name</h6>
+                        <h5 class="card-title">car price/hr</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/modelCar/cargoVan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">car name</h5>
+                        <h6 class="card-title">car model name</h6>
+                        <h5 class="card-title">car price/hr</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/modelCar/cargoVan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">car name</h5>
+                        <h6 class="card-title">car model name</h6>
+                        <h5 class="card-title">car price/hr</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Chepest car rent -->
+    <div class="container-fluid p-4">
+        <div>
+            <h1 class="text-center mb-5">
+                <img src="./img/user/bridge.png" alt="" srcset="">
+                Chepest Car Rent
+                <img src="./img/user/image.png" alt="" srcset="">
+            </h1>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4 px-md-5 px-3">
+            <div class="col">
+                <div class="card">
+                    <img src="./img/modelCar/cargoVan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">car name</h5>
+                        <h6 class="card-title">car model name</h6>
+                        <h5 class="card-title">car price/hr</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/modelCar/cargoVan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">car name</h5>
+                        <h6 class="card-title">car model name</h6>
+                        <h5 class="card-title">car price/hr</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/modelCar/cargoVan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">car name</h5>
+                        <h6 class="card-title">car model name</h6>
+                        <h5 class="card-title">car price/hr</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/modelCar/cargoVan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">car name</h5>
+                        <h6 class="card-title">car model name</h6>
+                        <h5 class="card-title">car price/hr</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/modelCar/cargoVan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">car name</h5>
+                        <h6 class="card-title">car model name</h6>
+                        <h5 class="card-title">car price/hr</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/modelCar/cargoVan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">car name</h5>
+                        <h6 class="card-title">car model name</h6>
+                        <h5 class="card-title">car price/hr</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./img/modelCar/cargoVan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">car name</h5>
+                        <h6 class="card-title">car model name</h6>
+                        <h5 class="card-title">car price/hr</h5>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -199,108 +371,125 @@
             </div>
         </div>
     </div> -->
-    <div class="row mx-auto my-auto justify-content-center">
-        <div id="testislide" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner testi" role="">
-                <div class="carousel-item testislide active" data-bs-interval="2000">
-                    <div class="col-md-4 p-0 p-md-3 h-100">
-                        <div class="border border-dark p-3 bg-light">
-                            <div class="card-body mb-2">
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                                    additional content.</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
-                                <h5 class="card-title ps-2">Card title6</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item testislide" data-bs-interval="2000">
-                    <div class="col-md-4 p-0 p-md-3 h-100">
-                        <div class="border border-dark p-3 bg-light">
-                            <div class="card-body mb-2">
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                                    additional content.</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
-                                <h5 class="card-title ps-2">Card title 5</h5>
+    <div class="container-fluid p-4">
+        <div>
+            <h1 class="text-center mb-5">
+                <img src="./img/user/bridge.png" alt="" srcset="">
+                Testimonial
+                <img src="./img/user/image.png" alt="" srcset="">
+            </h1>
+        </div>
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="testislide" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner testi" role="">
+                    <div class="carousel-item testislide active" data-bs-interval="2000">
+                        <div class="col-md-4 p-0 p-md-3 h-100">
+                            <div class="border border-dark p-3 bg-light">
+                                <div class="card-body mb-2">
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
+                                    <h5 class="card-title ps-2">Card title6</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item testislide" data-bs-interval="2000">
-                    <div class="col-md-4 p-0 p-md-3 h-100">
-                        <div class="border border-dark p-3 bg-light">
-                            <div class="card-body mb-2">
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                                    additional content.</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
-                                <h5 class="card-title ps-2">Card title 4</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item testislide" data-bs-interval="2000">
-                    <div class="col-md-4 p-0 p-md-3 h-100">
-                        <div class="border border-dark p-3 bg-light">
-                            <div class="card-body mb-2">
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                                    additional content.</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
-                                <h5 class="card-title ps-2">Card title 3</h5>
+                    <div class="carousel-item testislide" data-bs-interval="2000">
+                        <div class="col-md-4 p-0 p-md-3 h-100">
+                            <div class="border border-dark p-3 bg-light">
+                                <div class="card-body mb-2">
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
+                                    <h5 class="card-title ps-2">Card title 5</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item testislide" data-bs-interval="2000">
-                    <div class="col-md-4 p-0 p-md-3 h-100">
-                        <div class="border border-dark p-3 bg-light">
-                            <div class="card-body mb-2">
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                                    additional content.</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
-                                <h5 class="card-title ps-2">Card title 2</h5>
+                    <div class="carousel-item testislide" data-bs-interval="2000">
+                        <div class="col-md-4 p-0 p-md-3 h-100">
+                            <div class="border border-dark p-3 bg-light">
+                                <div class="card-body mb-2">
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
+                                    <h5 class="card-title ps-2">Card title 4</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item testislide" data-bs-interval="2000">
-                    <div class="col-md-4 p-0 p-md-3 h-100">
-                        <div class="border border-dark p-3 bg-light">
-                            <div class="card-body mb-2">
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                                    additional content.</p>
+                    <div class="carousel-item testislide" data-bs-interval="2000">
+                        <div class="col-md-4 p-0 p-md-3 h-100">
+                            <div class="border border-dark p-3 bg-light">
+                                <div class="card-body mb-2">
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
+                                    <h5 class="card-title ps-2">Card title 3</h5>
+                                </div>
                             </div>
-                            <div class="d-flex align-items-center">
-                                <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
-                                <h5 class="card-title ps-2">Card title 1</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item testislide" data-bs-interval="2000">
+                        <div class="col-md-4 p-0 p-md-3 h-100">
+                            <div class="border border-dark p-3 bg-light">
+                                <div class="card-body mb-2">
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
+                                    <h5 class="card-title ps-2">Card title 2</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item testislide" data-bs-interval="2000">
+                        <div class="col-md-4 p-0 p-md-3 h-100">
+                            <div class="border border-dark p-3 bg-light">
+                                <div class="card-body mb-2">
+                                    <p class="card-text">This is a longer card with supporting text below as a natural
+                                        lead-in to
+                                        additional content.</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
+                                    <h5 class="card-title ps-2">Card title 1</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-end" style="height: 3rem;">
-            <div class="col-2">
-                <a href="#testislide" role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-circle" style="font-size: 1.6rem;"></i></a>
-
-                <!-- <a class="carousel-control-prev bg-transparent w-aut" href="#testislide" role="button"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a> -->
-                <a href="#testislide" role="button" data-bs-slide="next"><i class="bi bi-arrow-right-circle" style="font-size: 1.6rem;"></i></a>
-                <!-- <a class="carousel-control-next bg-transparent w-aut" href="#testislide" role="button"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a> -->
+            <div class="row justify-content-end" style="height: 3rem;">
+                <div class="col-2">
+                    <a href="#testislide" role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-circle"
+                            style="font-size: 1.6rem;"></i></a>
+    
+                    <!-- <a class="carousel-control-prev bg-transparent w-aut" href="#testislide" role="button"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a> -->
+                    <a href="#testislide" role="button" data-bs-slide="next"><i class="bi bi-arrow-right-circle"
+                            style="font-size: 1.6rem;"></i></a>
+                    <!-- <a class="carousel-control-next bg-transparent w-aut" href="#testislide" role="button"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a> -->
+                </div>
             </div>
         </div>
     </div>
