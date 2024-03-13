@@ -9,3 +9,38 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 } */
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item.testislide>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item.testislide>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.testislide.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+
+    .carousel-inner.testi .carousel-item-end.active,
+    .carousel-inner.testi .carousel-item-next {
+        transform: translateX(33.33%);
+    }
+
+    .carousel-inner.testi .carousel-item-start.active,
+    .carousel-inner.testi .carousel-item-prev {
+        transform: translateX(-33.33%);
+    }
+}
+
+.carousel-inner.testi .carousel-item-end,
+.carousel-inner.testi .carousel-item-start {
+    transform: translateX(0);
+}

@@ -7,10 +7,11 @@
     <title>Wheels2Go</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Wheel2Go</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -53,32 +54,32 @@
 
     <!-- <div ><img src="./img/loader/wheel2.png" class="loader" width="32px" alt="" style="z-index: 10;"></div> -->
     <!--Slider-->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./img/road/road.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item active" data-bs-interval="3000">
+                <img src="./img/road/roadE.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
-                <img src="./img/road/road2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/road/roadE2.jpg" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
-                <img src="./img/road/road3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-item" data-bs-interval="3000">
+                <img src="./img/road/roadE5.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
@@ -86,7 +87,7 @@
     </div>
 
     <!-- search start-->
-    <div class="container-fluid my-5 p-5">
+    <div class="container-fluid p-5 bg-light">
         <div class="row m-5">
             <div class="form-floating col-sm-3 p-0">
                 <input type="date" aria-label="Last name" class="form-control" id="floatingInput">
@@ -101,48 +102,61 @@
                 <label for="floatingInput">To:</label>
             </div>
             <div class="form-floating col-sm-3 p-0">
-                <button type="submit" class="btn btn-primary">Get Car</button>
+                <button type="submit" class="btn btn-primary form-control p-0">Get Car</button>
             </div>
         </div>
     </div>
 
     <!--pramotional or banners-->
-    <div class="container-fluid p-0">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+    <div class="container-fluid p-5">
+        <div>
+            <h1 class="text-center">Banners</h1>
+        </div> 
+        <div class="row">
+            <div class="col-1 p-0 align-self-center text-center">
+                <a href="#banner" role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-circle" style="font-size: 1.6rem;"></i></a>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="100">
-                    <img src="./img/wp/16.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="100">
-                    <img src="./img/wp/17.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="100">
-                    <img src="./img/wp/18.jpg" class="d-block w-100" alt="...">
+            <div class="col-10">
+                <div id="banner" class="carousel slide carousel-fade p-0" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#banner" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#banner" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="./img/wp/16.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./img/wp/17.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./img/wp/18.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#banner"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#banner"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button> -->
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="col-1 p-0 align-self-center text-center">
+                <a href="#banner" role="button" data-bs-slide="next"><i class="bi bi-arrow-right-circle" style="font-size: 1.6rem;"></i></a>
+            </div>
         </div>
     </div>
 
     <!--testimonial-->
-    <div class="container-fluid p-3">
+    <!-- <div class="container-fluid p-3">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col ">
                 <div class="h-100 border border-dark">
@@ -184,9 +198,115 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="row mx-auto my-auto justify-content-center">
+        <div id="testislide" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner testi" role="">
+                <div class="carousel-item testislide active" data-bs-interval="2000">
+                    <div class="col-md-4 p-0 p-md-3 h-100">
+                        <div class="border border-dark p-3 bg-light">
+                            <div class="card-body mb-2">
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
+                                <h5 class="card-title ps-2">Card title6</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item testislide" data-bs-interval="2000">
+                    <div class="col-md-4 p-0 p-md-3 h-100">
+                        <div class="border border-dark p-3 bg-light">
+                            <div class="card-body mb-2">
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
+                                <h5 class="card-title ps-2">Card title 5</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item testislide" data-bs-interval="2000">
+                    <div class="col-md-4 p-0 p-md-3 h-100">
+                        <div class="border border-dark p-3 bg-light">
+                            <div class="card-body mb-2">
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
+                                <h5 class="card-title ps-2">Card title 4</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item testislide" data-bs-interval="2000">
+                    <div class="col-md-4 p-0 p-md-3 h-100">
+                        <div class="border border-dark p-3 bg-light">
+                            <div class="card-body mb-2">
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
+                                <h5 class="card-title ps-2">Card title 3</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item testislide" data-bs-interval="2000">
+                    <div class="col-md-4 p-0 p-md-3 h-100">
+                        <div class="border border-dark p-3 bg-light">
+                            <div class="card-body mb-2">
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
+                                <h5 class="card-title ps-2">Card title 2</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item testislide" data-bs-interval="2000">
+                    <div class="col-md-4 p-0 p-md-3 h-100">
+                        <div class="border border-dark p-3 bg-light">
+                            <div class="card-body mb-2">
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="./img/user/user1.png" class="m-1 rounded-circle" alt="...">
+                                <h5 class="card-title ps-2">Card title 1</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-end" style="height: 3rem;">
+            <div class="col-2">
+                <a href="#testislide" role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-circle" style="font-size: 1.6rem;"></i></a>
+
+                <!-- <a class="carousel-control-prev bg-transparent w-aut" href="#testislide" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a> -->
+                <a href="#testislide" role="button" data-bs-slide="next"><i class="bi bi-arrow-right-circle" style="font-size: 1.6rem;"></i></a>
+                <!-- <a class="carousel-control-next bg-transparent w-aut" href="#testislide" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a> -->
+            </div>
+        </div>
     </div>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
