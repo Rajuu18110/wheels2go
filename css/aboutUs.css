@@ -1,0 +1,58 @@
+about us css
+
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    /* margin-top: 50px !important; */
+    width: 50%;
+    float: left;
+    padding: 20px;
+}  
+
+.float-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .float-child {
+    width: 48%; /* Adjust this value as needed */
+  }
+
+  .blue {
+    background-color: lightblue;
+    padding: 20px;
+  }
+
+  .companyLogo {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container{
+    margin-top: 70px;
+  }
+
+  .section {
+    background-color: rgba(240, 240, 240, 0.881);
+    margin-top: 10px;
+  }
+
+  .section-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .section-paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+ 
