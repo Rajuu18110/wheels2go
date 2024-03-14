@@ -1,14 +1,4 @@
-/* .searchHome{
-    height: 300px;
-} */
-/* .loader{
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-} */
+/* testiminial*/
 
 @media (max-width: 767px) {
     .carousel-inner .carousel-item.testislide>div {
@@ -26,7 +16,6 @@
     display: flex;
 }
 
-/* medium and up screens */
 @media (min-width: 768px) {
 
     .carousel-inner.testi .carousel-item-end.active,
@@ -42,5 +31,41 @@
 
 .carousel-inner.testi .carousel-item-end,
 .carousel-inner.testi .carousel-item-start {
+    transform: translateX(0);
+}
+
+/* cars modal*/
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item.carmodal>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item.carmodal>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.carmodal.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+
+    .carousel-inner.carmo .carousel-item-end.active,
+    .carousel-inner.carmo .carousel-item-next {
+        transform: translateX(16.66%);
+    }
+
+    .carousel-inner.carmo .carousel-item-start.active,
+    .carousel-inner.carmo .carousel-item-prev {
+        transform: translateX(-16.66%);
+    }
+}
+
+.carousel-inner.carmo .carousel-item-end,
+.carousel-inner.carmo .carousel-item-start {
     transform: translateX(0);
 }
