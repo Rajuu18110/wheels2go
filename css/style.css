@@ -1,3 +1,31 @@
+:root{
+    --bg-one: #40A2E3;
+    --bg-sec: #FFF6E9;
+    --bg-third: #BBE2EC;
+    --bg-four: #0D9276;
+
+    --bg-five: #6d326d;
+    --bg-six: #FFFFFF;
+    --bg-seven: #003F91;
+    --bg-eight: #5da9e9;
+    --bg-nine: #E5F4E3;
+
+    --bg-ten: #3E64FF;
+}
+.navbarper{
+    background-color: var(--bg-nine);
+}
+.navbarper .navlinks{
+    color: var(--bg-seven) !important;
+}
+.navbarper .navlinks:hover,
+.navbarper .navlinks.active{
+    color: var(--bg-ten) !important;
+}
+/* search home */
+.searchhome{
+    background-color: var(--bg-ten);
+}
 /* testiminial*/
 
 @media (max-width: 767px) {
@@ -67,5 +95,41 @@
 
 .carousel-inner.carmo .carousel-item-end,
 .carousel-inner.carmo .carousel-item-start {
+    transform: translateX(0);
+}
+
+/* cars company*/
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item.carcompany>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item.carcompany>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.carcompany.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+
+    .carousel-inner.carcom .carousel-item-end.active,
+    .carousel-inner.carcom .carousel-item-next {
+        transform: translateX(16.66%);
+    }
+
+    .carousel-inner.carcom .carousel-item-start.active,
+    .carousel-inner.carcom .carousel-item-prev {
+        transform: translateX(-16.66%);
+    }
+}
+
+.carousel-inner.carcom .carousel-item-end,
+.carousel-inner.carcom .carousel-item-start {
     transform: translateX(0);
 }
