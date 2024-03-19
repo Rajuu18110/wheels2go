@@ -11,7 +11,9 @@
 .location:hover{
     border: 6px solid var(--bg-backDark);
 }
-
+.queBox{
+    background-color: var(--bg-backLight);
+}
 
 @media (max-width: 767px) {
     imgLoc{
