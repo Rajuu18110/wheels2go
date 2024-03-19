@@ -11,6 +11,12 @@
 .textTwo{
     color: var(--bg-textTwo);
 }
+.backDark{
+    background-color: var(--bg-backDark);
+}
+.backLight{
+    background-color: var(--bg-backLight);
+}
 .navbarper, .navbarper .show{
     background-color: var(--bg-backDark);
 }

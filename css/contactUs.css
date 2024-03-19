@@ -1,0 +1,10 @@
+.location{
+    border: 8px double black;
+}
+
+@media (max-width: 767px) {
+    imgLoc{
+        width: fit-content;
+        height: auto;
+    }
+}
