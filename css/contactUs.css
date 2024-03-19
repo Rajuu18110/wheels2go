@@ -1,6 +1,17 @@
+:root{
+    --bg-textOne: #FFF6E9;
+    --bg-five: #E0E1DD;
+    --bg-backDark: #0D1B2A;
+    --bg-textTwo: #3DFFFF;
+    --bg-backLight: #EEF5FF;
+}
 .location{
     border: 8px double black;
 }
+.location:hover{
+    border: 6px solid var(--bg-backDark);
+}
+
 
 @media (max-width: 767px) {
     imgLoc{
