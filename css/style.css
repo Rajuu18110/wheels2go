@@ -1,33 +1,70 @@
 :root{
-    --bg-one: #40A2E3;
-    --bg-sec: #FFF6E9;
-    --bg-third: #BBE2EC;
-    --bg-four: #0D9276;
-
-    --bg-five: #6d326d;
-    --bg-six: #FFFFFF;
-    --bg-seven: #003F91;
-    --bg-eight: #5da9e9;
-    --bg-nine: #E5F4E3;
-
-    --bg-ten: #3E64FF;
+    --bg-textOne: #FFF6E9;
+    --bg-five: #E0E1DD;
+    --bg-backDark: #0D1B2A;
+    --bg-textTwo: #3DFFFF;
+    --bg-backLight: #EEF5FF;
 }
-.navbarper{
-    background-color: var(--bg-nine);
+.textOne{
+    color: var(--bg-textOne);
+}
+.textTwo{
+    color: var(--bg-textTwo);
+}
+.backDark{
+    background-color: var(--bg-backDark);
+}
+.backLight{
+    background-color: var(--bg-backLight);
+}
+.navbarper, .navbarper .show{
+    background-color: var(--bg-backDark);
 }
 .navbarper .navlinks{
-    color: var(--bg-seven) !important;
+    color: var(--bg-textTwo) !important;
 }
 .navbarper .navlinks:hover,
 .navbarper .navlinks.active{
-    color: var(--bg-ten) !important;
+    color: var(--bg-textOne) !important;
+}
+.navbarper .show .dropdown-item:hover{
+    background-color: var(--bg-textOne) !important;
+    color: var(--bg-backDark) !important;
 }
 /* search home */
 .searchhome{
-    background-color: var(--bg-ten);
+    background-color: var(--bg-backLight);
+}
+.btnColor{
+    background-color: var(--bg-backDark);
+    color: var(--bg-textTwo);
+}
+.btnColor:hover{
+    background-color: var(--bg-textTwo);
+    color: var(--bg-backDark);
+}
+.backScroll{
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 -15px 13px 0 black inset, 0 15px 13px 0 black inset;
+}
+/* most pick ca0 */
+.mostPickHome{
+    background-color: var(--bg-backDark);
+}
+.homeCard:hover{
+    box-shadow: 0 0 0 5px var(--bg-textTwo);
 }
 /* testiminial*/
-
+.testimonial{
+    background-color: var(--bg-backLight);
+}
+.testiborder{
+    border: 7px double var(--bg-backDark);
+}
 @media (max-width: 767px) {
     .carousel-inner .carousel-item.testislide>div {
         display: none;
@@ -132,4 +169,8 @@
 .carousel-inner.carcom .carousel-item-end,
 .carousel-inner.carcom .carousel-item-start {
     transform: translateX(0);
+}
+
+.footer{
+    background-color: var(--bg-backDark);
 }
