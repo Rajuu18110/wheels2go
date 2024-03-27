@@ -31,6 +31,59 @@
     background-color: var(--bg-textOne) !important;
     color: var(--bg-backDark) !important;
 }
+.togglecolor{
+    background-color: var(--bg-textOne);
+}
+/* back to top */
+.backtotop{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    background-color: var(--bg-textOne);
+    cursor: pointer;
+    padding: 10px; 
+    border-radius: 50%; 
+}
+.backtotop img{
+    height: 32px;
+    width: 32px;
+}
+
+.backtotop:hover img{
+    animation: wheel 1s linear infinite;
+}
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+/* down sign */
+.downsign{
+    position: fixed;
+    bottom: 20px;
+    z-index: 99;
+    left: 50%;
+    animation: bounce 1s linear infinite;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(4px);
+    }
+    50%{
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(4px);
+    }
+}
+
+
 /* search home */
 .searchhome{
     background-color: var(--bg-backLight);

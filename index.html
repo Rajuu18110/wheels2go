@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-light navbarper">
         <div class="container-fluid">
             <a class="navbar-brand navlinks active" href="#">Wheel2Go</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            <button class="navbar-toggler togglecolor" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -52,6 +52,16 @@
         </div>
     </nav>
 
+    <!-- nevigate to top -->
+    <button onclick="topFunction()" id="backtotop" class="backtotop" title="Go to top">
+        <img src="./img/loader/wheel2.png" alt="" srcset="">
+    </button> 
+
+    <!-- scroll down sign -->
+    <div class="downsign">
+        <p class=""><i class="bi bi-caret-down-fill"></i></p>
+    </div>
+
     <!-- search start-->
     <div class="container-fluid p-5 searchhome"  >
         <div>
@@ -60,28 +70,30 @@
                 <img src="./img/user/image.png" alt="" srcset="">
             </h1>
         </div>
-        <div class="row g-1 p-3 rounded-3 border border-light border-3">
-            <div class="form-floating col-sm-3">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                    <option selected>Open this to select location</option>
-                    <option value="toronto">Toronto</option>
-                    <option value="mississauga">Mississauga</option>
-                    <option value="brampton">Brampton</option>
-                </select>
-                <label for="floatingSelect">Select preferable location to pick car</label>
+        <form action="./booking.html" method="get">
+            <div class="row g-1 p-3 rounded-3 border border-light border-3">
+                <div class="form-floating col-sm-3">
+                    <select class="form-select" id="picklocation" name="picklocation" aria-label="Floating label select example">
+                        <option selected>Open this to select location</option>
+                        <option value="toronto">Toronto</option>
+                        <option value="mississauga">Mississauga</option>
+                        <option value="brampton">Brampton</option>
+                    </select>
+                    <label for="floatingSelect">Select preferable location to pick car</label>
+                </div>
+                <div class="form-floating col-sm-3">
+                    <input type="date" aria-label="Last name" class="form-control" name="fromdate" id="fromdate">
+                    <label for="fromdate">From:</label>
+                </div>
+                <div class="form-floating col-sm-3">
+                    <input type="date" aria-label="Last name" class="form-control" name="todate" id="todate">
+                    <label for="todate">To:</label>
+                </div>
+                <div class="form-floating col-sm-3">
+                    <button type="submit" class="btn btnColor form-control p-0">Get Car</button>
+                </div>
             </div>
-            <div class="form-floating col-sm-3">
-                <input type="date" aria-label="Last name" class="form-control" id="floatingInput">
-                <label for="floatingInput">From:</label>
-            </div>
-            <div class="form-floating col-sm-3">
-                <input type="date" aria-label="Last name" class="form-control" id="floatingInput">
-                <label for="floatingInput">To:</label>
-            </div>
-            <div class="form-floating col-sm-3">
-                <button type="submit" class="btn btnColor form-control p-0">Get Car</button>
-            </div>
-        </div>
+        </form>
     </div>
 
     <!--Slider-->
@@ -322,7 +334,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="row">
             <div class="col-md-3 p-4">
                 <h3 class="textTwo">vehicle type:</h3>
