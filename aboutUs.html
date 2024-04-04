@@ -4,60 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/aboutUs.css">
-    <script src="./js/aboutUs.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+    <title>Wheels2Go</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/aboutUs.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <!-- Fixed nav -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbarper">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Wheel2Go</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            <a class="navbar-brand navlinks active" href="#">Wheel2Go</a>
+            <button class="navbar-toggler togglecolor" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link navlinks" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./aboutUs.html">About Us</a>
+                        <a class="nav-link active navlinks" href="./aboutUs.html">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Vehicles
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./cars.html">Cars</a></li>
-                            <li><a class="dropdown-item" href="./bikes.html">Bikes</a></li>
-                        </ul>
+                        <a class="nav-link navlinks" href="./cars.html">Cars</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./booking.html">Booking</a>
+                        <a class="nav-link navlinks" href="./booking.html">Booking</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contactUs.html">Contact Us</a>
+                        <a class="nav-link navlinks" href="./contactUs.html">Contact Us</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Log In/Sign UP</a>
+                        <a class="nav-link navlinks" aria-current="page" href="./login.html">Log In</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <h3 class="header">About us</h3>
+    <!-- nevigate to top -->
+    <button onclick="topFunction()" id="backtotop" class="backtotop" title="Go to top">
+        <img src="./img/loader/wheel2.png" alt="" srcset="">
+    </button> 
+
+    <!-- scroll down sign -->
+    <div class="downsign">
+        <p class=""><i class="bi bi-caret-down-fill arrowcolor"></i></p>
+    </div>
+
+    <!-- company info -->
+    <div class="container-fluid backLight p-5 mt-5">
+        <div>
+            <h1 class="text-center mb-3">
+                Company Information
+                <img src="./img/user/image.png" alt="" srcset="">
+            </h1>
+        </div>
+        <div class="row  g-4 p-0">
+            <div class="col-lg-4 p-5">
+                <img src="./img/aboutUs/comInfo.jpg" class="img-thumbnail" alt="" srcset="">
+            </div>
+            <div class="col-lg-8 p-5">
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur incidunt sed, cum sint
+                    perferendis animi obcaecati facilis inventore consequuntur nihil similique eos quibusdam nam ab est
+                    eveniet doloremque ratione omnis.
+                    Eveniet hic consectetur eum perspiciatis asperiores dolorem quas nulla voluptate facere expedita
+                    vel, ratione et inventore dolorum, atque fuga illum, corrupti architecto qui. Voluptates amet,
+                    dolorum totam dicta explicabo nisi.
+                    Autem optio eveniet quae sed nesciunt provident nulla dicta assumenda laudantium neque facilis
+                    reiciendis, excepturi id blanditiis sit corporis recusandae maxime consectetur consequatur eaque
+                    hic, ea libero accusantium suscipit. Tempora.</h5>
+            </div>
+        </div>
+    </div>
+    <!-- <h3 class="header">About us</h3>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -76,10 +100,34 @@
                     hic, ea libero accusantium suscipit. Tempora.</p>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <!-- New section -->
-    <div class="section">
+    <!-- motive -->
+    <div class="container-fluid backDark p-5">
+        <div>
+            <h1 class="text-center mb-3 textOne">
+                Our Motive
+                <img src="./img/user/carIcon2.png" alt="" srcset="">
+            </h1>
+        </div>
+        <div class="row  g-4 p-0">
+            <div class="col-lg-8 p-5">
+                <h5 class="textOne">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur incidunt sed, cum sint
+                    perferendis animi obcaecati facilis inventore consequuntur nihil similique eos quibusdam nam ab est
+                    eveniet doloremque ratione omnis.
+                    Eveniet hic consectetur eum perspiciatis asperiores dolorem quas nulla voluptate facere expedita
+                    vel, ratione et inventore dolorum, atque fuga illum, corrupti architecto qui. Voluptates amet,
+                    dolorum totam dicta explicabo nisi.
+                    Autem optio eveniet quae sed nesciunt provident nulla dicta assumenda laudantium neque facilis
+                    reiciendis, excepturi id blanditiis sit corporis recusandae maxime consectetur consequatur eaque
+                    hic, ea libero accusantium suscipit. Tempora.</h5>
+            </div>
+            <div class="col-lg-4 p-5">
+                <img src="./img/aboutUs/comInfo.jpg" class="img-thumbnail" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <!-- <div class="section">
         <h3 class="section-header">Mission</h3>
         <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, consectetur
             doloribus eaque inventore nihil molestiae nemo maxime repudiandae, sed necessitatibus nostrum aperiam dolor
@@ -94,10 +142,40 @@
             voluptas nulla quas optio?
             Quia recusandae aperiam optio provident facere, eveniet nemo doloribus minus, dolore enim, voluptatum
             tempore.</p>
-    </div>
+    </div> -->
 
     <!-- Team section -->
-    <div>
+    <div class="container-fluid backLight p-5">
+        <div>
+            <h1 class="text-center mb-3">
+                Company Founder
+                <img src="./img/user/image.png" alt="" srcset="">
+            </h1>
+        </div>
+        <div class="row  g-4 p-0">
+            <div class="col-lg-3 col-md-2 p-5 founderbox">
+                <img src="./img/aboutUs/comInfo.jpg" class="founderimg mx-auto d-block" alt="" srcset="">
+                <h5 class="text-center mt-3">Position</h5>
+                <h4 class="text-center">Raj Patel</h4>
+            </div>
+            <div class="col-lg-3 col-md-2 p-5 founderbox">
+                <img src="./img/aboutUs/comInfo.jpg" class="founderimg mx-auto d-block" alt="" srcset="">
+                <h5 class="text-center mt-3">Position</h5>
+                <h4 class="text-center">Neehal Hansoti</h4>
+            </div>
+            <div class="col-lg-3 col-md-2 p-5 founderbox">
+                <img src="./img/aboutUs/comInfo.jpg" class="founderimg mx-auto d-block" alt="" srcset="">
+                <h5 class="text-center mt-3">Position</h5>
+                <h4 class="text-center">Pranav Pal</h4>
+            </div>
+            <div class="col-lg-3 col-md-2 p-5 founderbox">
+                <img src="./img/aboutUs/comInfo.jpg" class="founderimg mx-auto d-block" alt="" srcset="">
+                <h5 class="text-center mt-3">Position</h5>
+                <h4 class="text-center">Ayush Patel</h4>
+            </div>
+        </div>
+    </div>
+    <!-- <div>
         <h3>Team members</h3>
     </div>
 
@@ -144,10 +222,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Awards -->
-    <section class="py-xl-8 section">
+    <!-- <section class="py-xl-8 section">
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
@@ -218,40 +296,40 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- footer -->
-    <div class="footer">
-
-        <footer>
-            <div class="row">
-                <div class="col-md-3 p-4">
-                    <h3>vehicle type:</h3>
-                    <a href="http://">sedan</a><br>
-                    <a href="http://">suv</a><br>
-                    <a href="http://">minivan</a><br>
-                </div>
-                <div class="col-md-3 p-4">
-                    <h3>vehicle company:</h3>
-                    <a href="http://">honda</a><br>
-                    <a href="http://">toyota</a><br>
-                    <a href="http://">bmw</a><br>
-                </div>
-                <div class="col-md-3 p-4">
-                    <h3>Company:</h3>
-                    <a href="http://">Term&Condition</a><br>
-                    <a href="http://">Private policy</a><br>
-                    <a href="http://">Booking procedure</a><br>
-                </div>
-                <div class="col-md-3 p-4">
-                    <h3>Contact:</h3>
-                    <a href="http://"><i class="bi bi-facebook"></i></a>
-                    <a href="http://"><i class="bi bi-whatsapp"></i></a>
-                    <a href="http://"><i class="bi bi-envelope"></i></a>
-                </div>
+    <footer class="footer" id="footer">
+        <div class="row m-0">
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">vehicle type:</h3>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">sedan</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">suv</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">minivan</a><br>
             </div>
-        </footer>
-    </div>
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">vehicle company:</h3>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">honda</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">toyota</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">bmw</a><br>
+            </div>
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">Company:</h3>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">Term&Condition</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">Private policy</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">Booking procedure</a><br>
+            </div>
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">Contact:</h3>
+                <a href="http://" class="textOne"><i class="bi bi-facebook"></i></a>
+                <a href="http://" class="textOne"><i class="bi bi-whatsapp"></i></a>
+                <a href="http://" class="textOne"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

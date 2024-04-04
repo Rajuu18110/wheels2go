@@ -1,58 +1,65 @@
-about us css
-
-.float-container {
-    border: 3px solid #fff;
-    padding: 20px;
+/* about us css .float-container {
+  border: 3px solid #fff;
+  padding: 20px;
 }
 
 .float-child {
-    /* margin-top: 50px !important; */
-    width: 50%;
-    float: left;
-    padding: 20px;
-}  
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
 
 .float-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 
-  .float-child {
-    width: 48%; /* Adjust this value as needed */
-  }
+.float-child {
+  width: 48%; 
+}
 
-  .blue {
-    background-color: lightblue;
-    padding: 20px;
-  }
+.blue {
+  background-color: lightblue;
+  padding: 20px;
+}
 
-  .companyLogo {
-    max-width: 70%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.companyLogo {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .container{
-    margin-top: 70px;
-  }
+.container {
+  margin-top: 70px;
+}
 
-  .section {
-    background-color: rgba(240, 240, 240, 0.881);
-    margin-top: 10px;
-  }
+.section {
+  background-color: rgba(240, 240, 240, 0.881);
+  margin-top: 10px;
+}
 
-  .section-header {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+.section-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-  .section-paragraph {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
- 
+.section-paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+} */
+
+.founderbox:hover .founderimg{
+  border: 0;
+  box-shadow: 6px 6px 5px 0 var(--bg-backDark);
+  z-index: 1000;
+}
+.founderimg {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  color: aliceblue;
+}
