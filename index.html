@@ -27,14 +27,7 @@
                         <a class="nav-link navlinks" href="./aboutUs.html">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle navlinks" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Vehicles
-                        </a>
-                        <ul class="dropdown-menu navlinks" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item navlinks" href="./cars.html">Cars</a></li>
-                            <li><a class="dropdown-item navlinks" href="./bikes.html">Bikes</a></li>
-                        </ul>
+                        <a class="nav-link navlinks" href="./cars.html">Cars</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link navlinks" href="./booking.html">Booking</a>
@@ -59,7 +52,7 @@
 
     <!-- scroll down sign -->
     <div class="downsign">
-        <p class=""><i class="bi bi-caret-down-fill"></i></p>
+        <p class=""><i class="bi bi-caret-down-fill arrowcolor"></i></p>
     </div>
 
     <!-- search start-->
@@ -71,7 +64,7 @@
             </h1>
         </div>
         <form action="./booking.html" method="get">
-            <div class="row g-1 p-3 rounded-3 border border-light border-3">
+            <div class="row g-1 p-3 rounded-3 backDark">
                 <div class="form-floating col-sm-3">
                     <select class="form-select" id="picklocation" name="picklocation" aria-label="Floating label select example">
                         <option selected>Open this to select location</option>
@@ -96,34 +89,6 @@
         </form>
     </div>
 
-    <!--Slider-->
-    <!-- <div id="mainSlider" class="carousel slide mainSliderHome" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true"
-                aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000">
-                <img src="./img/road/roadE.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="./img/road/roadE2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-                <img src="./img/road/roadE5.jpg" class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div> -->
     <div class="container-fluid backScroll" style="background-image: url('./img/road/roadE.jpg');">
         
     </div>
@@ -131,9 +96,9 @@
     <!-- most Pick car -->
     <div class="container-fluid p-4 mostPickHome">
         <div>
-            <h1 class="text-center mb-5 textTwo">
+            <h1 class="text-center mb-5 textOne">
                 Most pick Car
-                <img src="./img/user/carIcon3.png" alt="" srcset="">
+                <img src="./img/user/carIcon2.png" alt="" srcset="">
             </h1>
         </div>
         <div class="row row-cols-1 row-cols-md-4 g-4 px-md-5 px-3">
@@ -210,12 +175,40 @@
         </div>
     </div>
 
-    <!--testimonial-->
-    <div class="container-fluid p-4 testimonial">
+    <!-- sets apart -->
+    <div class="container-fluid p-5 backLight">
         <div>
-            <h1 class="text-center mb-5">
-                Testimonial
+            <h1 class="text-center mb-5 textThird">
+                What sets Wheels2GO Apart?
                 <img src="./img/user/image.png" alt="" srcset="">
+            </h1>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4 px-md-5 px-3">
+            <div class="col-md-3">
+                <img src="./img/setDif/clean.png" class="mx-auto d-block" alt="" srcset="">
+                <h5 class="text-center mt-3">Clean and Hygienic Car</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="./img/setDif/bill.png" class="mx-auto d-block" alt="" srcset="">
+                <h5 class="text-center mt-3">Transparent Billing</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="./img/setDif/booking.png" class="mx-auto d-block" alt="" srcset="">
+                <h5 class="text-center mt-3">Easy Booking</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="./img/setDif/global.png" class="mx-auto d-block" alt="" srcset="">
+                <h5 class="text-center mt-3">27+ cities</h5>
+            </div>
+        </div>
+    </div>
+
+    <!--testimonial-->
+    <div class="container-fluid p-4 testimonial backDark">
+        <div>
+            <h1 class="text-center mb-5 textOne">
+                Testimonial
+                <img src="./img/user/carIcon2.png" alt="" srcset="">
             </h1>
         </div>
         <div class="row mx-auto my-auto justify-content-center">
@@ -224,7 +217,7 @@
                     <div class="carousel-item testislide active" data-bs-interval="2000">
                         <div class="col-md-4 p-0 p-md-3 h-100">
                             <div class="testiborder bg-light p-3">
-                                <div class="card-body">
+                                <div class="card-body mb-2">
                                     <p class="card-text">This is a longer card with supporting text below as a natural
                                         lead-in to
                                         additional content.</p>
@@ -315,27 +308,50 @@
             </div>
             <div class="row justify-content-end" style="height: 3rem;">
                 <div class="col-2">
-                    <a href="#testislide" role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-circle"
+                    <a href="#testislide" role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-circle textOne"
                             style="font-size: 1.6rem;"></i></a>
-
-                    <!-- <a class="carousel-control-prev bg-transparent w-aut" href="#testislide" role="button"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a> -->
-                    <a href="#testislide" role="button" data-bs-slide="next"><i class="bi bi-arrow-right-circle"
+                    <a href="#testislide" role="button" data-bs-slide="next"><i class="bi bi-arrow-right-circle textOne"
                             style="font-size: 1.6rem;"></i></a>
-                    <!-- <a class="carousel-control-next bg-transparent w-aut" href="#testislide" role="button"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a> -->
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="container-fluid p-5 backLight">
+        <div>
+            <h1 class="text-center mb-5 textThird">
+                What Wheels2Go have?
+                <img src="./img/user/image.png" alt="" srcset="">
+            </h1>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-4 px-md-5 px-3">
+            <div class="col-md-3">
+                <img src="./img/indexHave/customers.png" class="mx-auto d-block" alt="" srcset="">
+                <h3 class="text-center mt-3">12000+</h3>
+                <h5 class="text-center">Happy Customer</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="./img/indexHave/cars.png" class="mx-auto d-block" alt="" srcset="">
+                <h3 class="text-center mt-3">179+</h3>
+                <h5 class="text-center">Total Cars</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="./img/indexHave/awards.png" class="mx-auto d-block" alt="" srcset="">
+                <h3 class="text-center mt-3">16+</h3>
+                <h5 class="text-center">Awards</h5>
+            </div>
+            <div class="col-md-3">
+                <img src="./img/indexHave/experience.png" class="mx-auto d-block" alt="" srcset="">
+                <h3 class="text-center mt-3">6+</h3>
+                <h5 class="text-center">years of experience</h5>
             </div>
         </div>
     </div>
 
     <!-- footer -->
     <footer class="footer" id="footer">
-        <div class="row">
+        <div class="row m-0">
             <div class="col-md-3 p-4">
                 <h3 class="textTwo">vehicle type:</h3>
                 <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">sedan</a><br>

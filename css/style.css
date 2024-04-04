@@ -1,15 +1,22 @@
 :root{
-    --bg-textOne: #FFF6E9;
-    --bg-five: #E0E1DD;
+    --bg-textOne: #ffffff;
+    --bg-texttwo: #CADCFC;
+    --bg-textthird: #000000;
+    --bg-textfour: #0D1B2A;
     --bg-backDark: #0D1B2A;
-    --bg-textTwo: #3DFFFF;
-    --bg-backLight: #EEF5FF;
+    --bg-backLight: #CADCFC;
 }
 .textOne{
     color: var(--bg-textOne);
 }
 .textTwo{
-    color: var(--bg-textTwo);
+    color: var(--bg-texttwo);
+}
+.textThird{
+    color: var(--bg-textthird);
+}
+.textFour{
+    color: var(--bg-textfour);
 }
 .backDark{
     background-color: var(--bg-backDark);
@@ -21,7 +28,7 @@
     background-color: var(--bg-backDark);
 }
 .navbarper .navlinks{
-    color: var(--bg-textTwo) !important;
+    color: var(--bg-backLight) !important;
 }
 .navbarper .navlinks:hover,
 .navbarper .navlinks.active{
@@ -68,8 +75,29 @@
     position: fixed;
     bottom: 20px;
     z-index: 99;
-    left: 50%;
+    left: 49.6%;
     animation: bounce 1s linear infinite;
+}
+.arrowcolor{
+    color: #ffffff;
+    animation: chgcolor 1s linear infinite;
+}
+@keyframes chgcolor {
+    0% {
+        color: var(--bg-textOne);
+    }
+    25%{
+        color: var(--bg-textfour);
+    }
+    50%{
+        color: var(--bg-textOne);
+    }
+    75%{
+        color: var(--bg-textfour);
+    }
+    100% {
+        color: var(--bg-textOne);
+    }
 }
 @keyframes bounce {
     0% {
@@ -89,12 +117,13 @@
     background-color: var(--bg-backLight);
 }
 .btnColor{
-    background-color: var(--bg-backDark);
+    background-color: var(--bg-backLight);
     color: var(--bg-textTwo);
 }
 .btnColor:hover{
     background-color: var(--bg-textTwo);
-    color: var(--bg-backDark);
+    color: var(--bg-textOne);
+    border: 2px solid var(--bg-backLight);
 }
 .backScroll{
     min-height: 500px;
@@ -102,7 +131,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 -15px 13px 0 black inset, 0 15px 13px 0 black inset;
+    box-shadow: 0 -15px 13px 0 var(--bg-backDark) inset, 0 15px 13px 0 var(--bg-backLight) inset;
 }
 /* most pick ca0 */
 .mostPickHome{
@@ -112,9 +141,6 @@
     box-shadow: 0 0 0 5px var(--bg-textTwo);
 }
 /* testiminial*/
-.testimonial{
-    background-color: var(--bg-backLight);
-}
 .testiborder{
     border: 7px double var(--bg-backDark);
 }
