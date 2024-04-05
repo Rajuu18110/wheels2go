@@ -131,7 +131,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 -15px 13px 0 var(--bg-backDark) inset, 0 15px 13px 0 var(--bg-backLight) inset;
+    box-shadow: 0 -15px 13px 0 black inset, 0 15px 13px 0 black inset;
 }
 /* most pick ca0 */
 .mostPickHome{
