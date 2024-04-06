@@ -115,6 +115,9 @@
 /* search home */
 .searchhome{
     background-color: var(--bg-backLight);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .btnColor{
     background-color: var(--bg-backLight);
