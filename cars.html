@@ -11,57 +11,53 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbarper">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Wheel2Go</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            <a class="navbar-brand navlinks" href="#">Wheel2Go</a>
+            <button class="navbar-toggler togglecolor" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active navlinks" aria-current="page" href="./index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./aboutUs.html">About Us</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" href="./aboutUs.html">About Us</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Vehicles
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item active" href="./cars.html">Cars</a></li>
-                            <li><a class="dropdown-item" href="./bikes.html">Bikes</a></li>
-                        </ul>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" href="./cars.html">Cars</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./booking.html">Booking</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" href="./booking.html">Booking</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contactUs.html">Contact Us</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" href="./contactUs.html">Contact Us</a>
                     </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Log In/Sign UP</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" aria-current="page" href="./login.html">Log In</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- nevigate to top -->
+    <button onclick="topFunction()" id="backtotop" class="backtotop" title="Go to top">
+        <img src="./img/loader/wheel2.png" alt="" srcset="">
+    </button> 
+
     <!--pramotional or banners-->
-    <div class="container-fluid p-4">
+    <div class="container-fluid p-5 mt-5 backLight">
         <div>
-            <h1 class="text-center mb-5">
+            <h1 class="text-center mb-3">
                 Banners
                 <img src="./img/user/image.png" alt="" srcset=""></h1>
         </div>
         <div class="row">
             <div class="col-1 p-0 align-self-center text-center">
-                <a href="#banner" role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-circle  text-danger"
+                <a href="#banner" role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-circle  textThird"
                         style="font-size: 1.6rem;"></i></a>
             </div>
             <div class="col-10">
@@ -88,16 +84,16 @@
                 </div>
             </div>
             <div class="col-1 p-0 align-self-center text-center">
-                <a href="#banner" role="button" data-bs-slide="next"><i class="bi bi-arrow-right-circle text-danger" style="font-size: 1.6rem;"></i></a>
+                <a href="#banner" role="button" data-bs-slide="next"><i class="bi bi-arrow-right-circle textThird" style="font-size: 1.6rem;"></i></a>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid p-4">
+    <div class="container-fluid p-5 backDark">
         <div>
-            <h1 class="text-center mb-5">
+            <h1 class="text-center mb-5 textOne">
                 car Modal
-                <img src="./img/user/image.png" alt="" srcset="">
+                <img src="./img/user/carIcon2.png" alt="" srcset="">
             </h1>
         </div>
         <div class="row mx-auto my-auto justify-content-center">
@@ -176,28 +172,19 @@
                 </div>
             </div>
             <div class="row justify-content-end" style="height: 3rem;">
-                <div class="col-2">
-                    <a href="#carmodal" role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-circle"
+                <div class="col-2 d-flex justify-content-center">
+                    <a href="#carmodal" role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-circle textOne"
                             style="font-size: 1.6rem;"></i></a>
-    
-                    <!-- <a class="carousel-control-prev bg-transparent w-aut" href="#carmodal" role="button"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a> -->
-                    <a href="#carmodal" role="button" data-bs-slide="next"><i class="bi bi-arrow-right-circle"
+                    <a href="#carmodal" role="button" class="ms-3" data-bs-slide="next"><i class="bi bi-arrow-right-circle textOne"
                             style="font-size: 1.6rem;"></i></a>
-                    <!-- <a class="carousel-control-next bg-transparent w-aut" href="#carmodal" role="button"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a> -->
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid p-4">
+    <div class="container-fluid p-5 backLight">
         <div>
-            <h1 class="text-center mb-5">
+            <h1 class="text-center mb-5 textThird">
                 car by company
                 <img src="./img/user/image.png" alt="" srcset="">
             </h1>
@@ -278,15 +265,45 @@
                 </div>
             </div>
             <div class="row justify-content-end" style="height: 3rem;">
-                <div class="col-2">
-                    <a href="#carcompany" role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-circle"
+                <div class="col-2 d-flex justify-content-center">
+                    <a href="#carcompany" role="button" data-bs-slide="prev"><i class="bi bi-arrow-left-circle textThird"
                             style="font-size: 1.6rem;"></i></a>
-                    <a href="#carcompany" role="button" data-bs-slide="next"><i class="bi bi-arrow-right-circle"
+                    <a href="#carcompany" role="button" class="ms-3" data-bs-slide="next"><i class="bi bi-arrow-right-circle textThird"
                             style="font-size: 1.6rem;"></i></a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- footer -->
+    <footer class="footer" id="footer">
+        <div class="row m-0">
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">vehicle type:</h3>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">sedan</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">suv</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">minivan</a><br>
+            </div>
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">vehicle company:</h3>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">honda</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">toyota</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">bmw</a><br>
+            </div>
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">Company:</h3>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">Term&Condition</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">Private policy</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">Booking procedure</a><br>
+            </div>
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">Contact:</h3>
+                <a href="http://" class="textOne"><i class="bi bi-facebook"></i></a>
+                <a href="http://" class="textOne"><i class="bi bi-whatsapp"></i></a>
+                <a href="http://" class="textOne"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>

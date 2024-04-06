@@ -14,9 +14,8 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top navbarper">
         <div class="container-fluid">
             <a class="navbar-brand navlinks" href="#">Wheel2Go</a>
-            <button class="navbar-toggler togglecolor" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler togglecolor" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -47,7 +46,7 @@
     <!-- nevigate to top -->
     <button onclick="topFunction()" id="backtotop" class="backtotop" title="Go to top">
         <img src="./img/loader/wheel2.png" alt="" srcset="">
-    </button>
+    </button> 
 
     <!-- scroll down sign -->
     <div class="downsign">
@@ -65,8 +64,7 @@
         <form action="./booking.html" method="get">
             <div class="row g-1 p-3 rounded-3 backDark">
                 <div class="form-floating col-sm-3">
-                    <select class="form-select" id="picklocation" name="picklocation"
-                        aria-label="Floating label select example">
+                    <select class="form-select" id="picklocation" name="picklocation" aria-label="Floating label select example">
                         <option selected>Open this to select location</option>
                         <option value="toronto">Toronto</option>
                         <option value="mississauga">Mississauga</option>
@@ -90,7 +88,7 @@
     </div>
 
     <div class="container-fluid backScroll" style="background-image: url('./img/road/roadE.jpg');">
-
+        
     </div>
 
     <!-- most Pick car -->
@@ -101,17 +99,17 @@
                 <img src="./img/user/carIcon2.png" alt="" srcset="">
             </h1>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 px-md-5 px-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 px-md-5 px-3">
             <div class="col">
                 <div class="card homeCard">
                     <img src="./img/mostPick/audi_r8_v10_coupe_japan_2023-1920x1080.jpg" class="card-img-top" alt="...">
-                    <div class="card-body row p-2 px-3 m-0">
-                        <div class="col-12 col-md-6">
-                            <h4 class="card-title fw-bold">Audi</h4>
+                    <div class="card-body row p-4">
+                        <div class="col-8 col-md-6">
+                            <h3 class="card-title fw-bold">Audi</h3>
                             <h6 class="card-title">R8 V10</h6>
-                            <h5 class="card-title fw-bold mt-3">$70/hr</h5>
+                            <h5 class="card-title fw-bold mt-4">$70/hr</h5>
                         </div>
-                        <div class="col-12 col-md-6 align-self-end d-flex justify-content-end">
+                        <div class="col-4 col-md-6 align-self-end d-flex ms-auto">
                             <button type="submit" class="btn btnColor px-5 px-md-3 px-lg-2 py-2">Get Car</button>
                         </div>
                     </div>
@@ -119,109 +117,71 @@
             </div>
             <div class="col">
                 <div class="card homeCard">
-                    <img src="./img/mostPick/land_rover_defender_90_pacific_blue_edition-1920x1080.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body row p-2 px-3 m-0">
-                        <div class="col-12 col-md-6">
-                            <h5 class="card-title fw-bold">Land Rover</h5>
-                            <h6 class="card-title">Defender</h6>
-                            <h5 class="card-title fw-bold mt-3">$105/hr</h5>
-                        </div>
-                        <div class="col-12 col-md-6 align-self-end d-flex justify-content-end">
-                            <button type="submit" class="btn btnColor px-5 px-md-3 px-lg-2 py-2">Get Car</button>
-                        </div>
+                    <img src="./img/mostPick/land_rover_defender_90_pacific_blue_edition-1920x1080.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Land Rover</h5>
+                        <h6 class="card-title">Defender</h6>
+                        <h5 class="card-title">$105/hr</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card homeCard">
                     <img src="./img/mostPick/kia_ev9_gt_line_2023_4k_2-1920x1080.jpg" class="card-img-top" alt="...">
-                    <div class="card-body row p-2 px-3 m-0">
-                        <div class="col-12 col-md-6">
-                            <h5 class="card-title fw-bold">KIA</h5>
-                            <h6 class="card-title">EV9 GT-Line</h6>
-                            <h5 class="card-title fw-bold mt-3">$82/hr</h5>
-                        </div>
-                        <div class="col-12 col-md-6 align-self-end d-flex justify-content-end">
-                            <button type="submit" class="btn btnColor px-5 px-md-3 px-lg-2 py-2">Get Car</button>
-                        </div>
+                    <div class="card-body">
+                        <h5 class="card-title">KIA</h5>
+                        <h6 class="card-title">EV9 GT-Line</h6>
+                        <h5 class="card-title">$82/hr</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card homeCard">
-                    <img src="./img/mostPick/lexus_rx_500h_f_sport_2022_5k-1920x1080.jpg" class="card-img-top"
-                        alt="...">
-                    <div class="card-body row p-2 px-3 m-0">
-                        <div class="col-12 col-md-6">
-                            <h5 class="card-title fw-bold">Lexus</h5>
-                            <h6 class="card-title">RX 500H</h6>
-                            <h5 class="card-title fw-bold mt-3">$62/hr</h5>
-                        </div>
-                        <div class="col-12 col-md-6 align-self-end d-flex justify-content-end">
-                            <button type="submit" class="btn btnColor px-5 px-md-3 px-lg-2 py-2">Get Car</button>
-                        </div>
+                    <img src="./img/mostPick/lexus_rx_500h_f_sport_2022_5k-1920x1080.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lexus</h5>
+                        <h6 class="card-title">RX 500H</h6>
+                        <h5 class="card-title">$62/hr</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card homeCard">
                     <img src="./img/mostPick/mazda_cx_9_gt_sp_2021_5k-1920x1080.jpg" class="card-img-top" alt="...">
-                    <div class="card-body row p-2 px-3 m-0">
-                        <div class="col-12 col-md-6">
-                            <h5 class="card-title fw-bold">Mazda</h5>
-                            <h6 class="card-title">CX-9 GT SP</h6>
-                            <h5 class="card-title fw-bold mt-3">$42/hr</h5>
-                        </div>
-                        <div class="col-12 col-md-6 align-self-end d-flex justify-content-end">
-                            <button type="submit" class="btn btnColor px-5 px-md-3 px-lg-2 py-2">Get Car</button>
-                        </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Mazda</h5>
+                        <h6 class="card-title">CX-9 GT SP</h6>
+                        <h5 class="card-title">$42/hr</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card homeCard">
-                    <img src="./img/mostPick/2023_honda_cr_v_sport_touring_5k-1920x1080.jpg" class="card-img-top"
-                        alt="...">
-                    <div class="card-body row p-2 px-3 m-0">
-                        <div class="col-12 col-md-6">
-                            <h5 class="card-title fw-bold">Honda</h5>
-                            <h6 class="card-title">CR-V Sport</h6>
-                            <h5 class="card-title fw-bold mt-3">$40/hr</h5>
-                        </div>
-                        <div class="col-12 col-md-6 align-self-end d-flex justify-content-end">
-                            <button type="submit" class="btn btnColor px-5 px-md-3 px-lg-2 py-2">Get Car</button>
-                        </div>
+                    <img src="./img/mostPick/2023_honda_cr_v_sport_touring_5k-1920x1080.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Honda</h5>
+                        <h6 class="card-title">CR-V Sport</h6>
+                        <h5 class="card-title">$40/hr</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card homeCard">
                     <img src="./img/mostPick/hyundai_elantra_n_2024_4k-1920x1080.jpg" class="card-img-top" alt="...">
-                    <div class="card-body row p-2 px-3 m-0">
-                        <div class="col-12 col-md-6">
-                            <h5 class="card-title fw-bold">Hyundai </h5>
-                            <h6 class="card-title">Elantra N 2024</h6>
-                            <h5 class="card-title fw-bold mt-3">$42/hr</h5>
-                        </div>
-                        <div class="col-12 col-md-6 align-self-end d-flex justify-content-end">
-                            <button type="submit" class="btn btnColor px-5 px-md-3 px-lg-2 py-2">Get Car</button>
-                        </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Hyundai </h5>
+                        <h6 class="card-title">Elantra N 2024</h6>
+                        <h5 class="card-title">$42/hr</h5>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card homeCard">
                     <img src="./img/mostPick/porsche_taycan_2024_4k-1920x1080.jpg" class="card-img-top" alt="...">
-                    <div class="card-body row p-2 px-3 m-0">
-                        <div class="col-12 col-md-6">
-                            <h5 class="card-title fw-bold">Porsche</h5>
-                            <h6 class="card-title">Taycan</h6>
-                            <h5 class="card-title fw-bold mt-3">$58/hr</h5>
-                        </div>
-                        <div class="col-12 col-md-6 align-self-end d-flex justify-content-end">
-                            <button type="submit" class="btn btnColor px-5 px-md-3 px-lg-2 py-2">Get Car</button>
-                        </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Porsche</h5>
+                        <h6 class="card-title">Taycan</h6>
+                        <h5 class="card-title">$58/hr</h5>
                     </div>
                 </div>
             </div>
@@ -419,12 +379,9 @@
             </div>
             <div class="col-md-3 p-4">
                 <h3 class="textTwo">Company:</h3>
-                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://"
-                    class="textOne">Term&Condition</a><br>
-                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">Private
-                    policy</a><br>
-                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">Booking
-                    procedure</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">Term&Condition</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">Private policy</a><br>
+                <i class="bi bi-car-front-fill textOne me-2"></i><a href="http://" class="textOne">Booking procedure</a><br>
             </div>
             <div class="col-md-3 p-4">
                 <h3 class="textTwo">Contact:</h3>
