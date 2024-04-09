@@ -1,5 +1,19 @@
 .location{
     border: 8px double black;
+    color: var(--bg-textthird);
+}
+.location:hover{
+    background-color: white;
+}
+.queryback{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mapimg{
+    width: inherit;
+    border-bottom: 4px solid var(--bg-textthird);
 }
 
 @media (max-width: 767px) {

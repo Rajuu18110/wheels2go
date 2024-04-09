@@ -256,3 +256,9 @@
 .footer{
     background-color: var(--bg-backDark);
 }
+.footlink{
+    text-decoration: none;
+}
+.footlink:hover{
+    color: var(--bg-texttwo);
+}
