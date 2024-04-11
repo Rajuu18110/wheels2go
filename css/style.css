@@ -70,48 +70,6 @@
     }
 }
 
-/* down sign */
-.downsign{
-    position: fixed;
-    bottom: 20px;
-    z-index: 99;
-    left: 49.6%;
-    animation: bounce 1s linear infinite;
-}
-.arrowcolor{
-    color: #ffffff;
-    animation: chgcolor 1s linear infinite;
-}
-@keyframes chgcolor {
-    0% {
-        color: var(--bg-textOne);
-    }
-    25%{
-        color: var(--bg-textfour);
-    }
-    50%{
-        color: var(--bg-textOne);
-    }
-    75%{
-        color: var(--bg-textfour);
-    }
-    100% {
-        color: var(--bg-textOne);
-    }
-}
-@keyframes bounce {
-    0% {
-        transform: translateY(4px);
-    }
-    50%{
-        transform: translateY(-4px);
-    }
-    100% {
-        transform: translateY(4px);
-    }
-}
-
-
 /* search home */
 .searchhome{
     background-color: var(--bg-backLight);
@@ -141,7 +99,15 @@
     background-color: var(--bg-backDark);
 }
 .homeCard:hover{
-    box-shadow: 0 0 0 5px var(--bg-textTwo);
+    box-shadow: 0 0 5px 5px var(--bg-textOne);
+}
+.btnColorMost{
+    background-color: var(--bg-backDark);
+    color: var(--bg-textOne);
+}
+.btnColorMost:hover{
+    background-color: var(--bg-backLight);
+    color: var(--bg-textthird);
 }
 /* testiminial*/
 .testiborder{
