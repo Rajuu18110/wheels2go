@@ -262,3 +262,10 @@
 .footlink:hover{
     color: var(--bg-texttwo);
 }
+
+
+/* login page */
+.loginback{
+    background-position: center;
+    height: 675px;
+}
