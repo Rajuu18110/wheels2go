@@ -13,3 +13,7 @@
 .carlogosize{
     height: 135px !important;
 }
+
+.img-fluid{
+    height: 150px;
+}
