@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Wheels2Go</title>
+    <title>Booking - Wheels2Go</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/aboutUs.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
@@ -26,13 +25,13 @@
                         <a class="nav-link navlinks" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link active navlinks" href="./aboutUs.html">About Us</a>
+                        <a class="nav-link navlinks" href="./aboutUs.html">About Us</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link navlinks" href="./cars.html">Cars</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link navlinks" href="./booking.html">Booking</a>
+                        <a class="nav-link active navlinks" href="./booking.html">Booking</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link navlinks" href="./contactUs.html">Contact Us</a>
@@ -45,107 +44,111 @@
         </div>
     </nav>
 
-    <!-- nevigate to top -->
-    <button onclick="topFunction()" id="backtotop" class="backtotop" title="Go to top">
-        <img src="./img/loader/wheel2.png" alt="" srcset="">
-    </button>
-
-    <!-- company info -->
-    <div class="container-fluid backLight p-5">
+    <div class="container-fluid backLight">
         <div>
-            <h1 class="text-center mb-3">
-                Company Information
-                <img src="./img/user/image.png" alt="" srcset="">
-            </h1>
+            <h1 class="text-center textThird mb-3 pt-3">Paymemnt Procedure</h1>
         </div>
-        <div class="row  g-4 p-0">
-            <div class="col-lg-4 p-5">
-                <img src="./img/aboutUs/aboutus1.jpg" class="img-fluid aboutimg1" alt="" srcset="">
-            </div>
-            <div class="col-lg-8 p-5 align-self-center aboutTxt">
-                <h5>Welcome to Wheels2GO, where convenience meets reliability in your journey. At Wheels2GO, we
-                    understand the importance of flexibility and accessibility when it comes to your travel needs. With
-                    our extensive fleet of vehicles and user-friendly rental services, we're here to ensure that every
-                    mile of your journey is hassle-free.
-
-                    Whether you're embarking on a spontaneous road trip, need a reliable vehicle for your business
-                    travels, or simply require a temporary ride while yours is in the shop, Wheels2GO has you covered.
-                    Our intuitive online platform and mobile app make booking your ideal vehicle a breeze, offering a
-                    seamless experience from reservation to return.
-
-                    At Wheels2GO, we prioritize customer satisfaction above all else. Our commitment to excellence
-                    shines through in our meticulously maintained vehicles, ensuring that each rental is not only
-                    reliable but also comfortable and safe. From compact cars to spacious SUVs and everything in
-                    between, we have the perfect ride to suit your preferences and accommodate your travel party.</h5>
+        <div class="row justify-content-center g-3">
+            <div class="col-md-10 payback p-3 my-5">
+                <form class="row g-3" method="post" action="./booking.html">
+                    <h3>User Details</h3>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="First name" disabled>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Last name" disabled>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" disabled>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Contact</label>
+                        <input type="tel" class="form-control" id="inputEmail4" disabled>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" disabled>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity" disabled>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select" disabled>
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <h3>Car Info</h3>
+                    <div class="col-md-6">
+                        <label for="inputAddress" class="form-label">Car Name</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="car name" disabled>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputAddress" class="form-label">Car Model</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="model name" disabled>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputAddress" class="form-label">Car Price</label>
+                        <input type="text" class="form-control" id="inputAddress" disabled>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputAddress" class="form-label">Pick Up Location</label>
+                        <input type="text" class="form-control" id="inputAddress" disabled>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputAddress" class="form-label">From</label>
+                        <input type="date" class="form-control" id="inputAddress" disabled>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputAddress" class="form-label">To</label>
+                        <input type="date" class="form-control" id="inputAddress" disabled>
+                    </div>
+                    <hr>
+                    <h3>Card Details</h3>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Card Company</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>card type..</option>
+                            <option>Visa</option>
+                            <option>Master Card</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Card Type</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>card type..</option>
+                            <option>Credit Card</option>
+                            <option>Debit Card</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputAddress" class="form-label">Card Number</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234120989738179">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputAddress" class="form-label">Card Exp</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="01/91">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputAddress" class="form-label">CVV</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="01/91">
+                    </div>
+                    
+                    <div class="col-12">
+                        <button type="submit" class="btn btnprocess btn-primary col-12">Payment</button>
+                    </div>
+                </form>
             </div>
         </div>
+
     </div>
 
-    <!-- motive -->
-    <div class="container-fluid backDark p-5">
-        <div>
-            <h1 class="text-center mb-3 textOne">
-                Our Motive
-                <img src="./img/user/carIcon2.png" alt="" srcset="">
-            </h1>
-        </div>
-        <div class="row  g-4 p-0">
-            <div class="col-lg-8 p-5 align-self-center">
-                <h5 class="textOne">The motive behind Wheels2GO stems from a deep-seated belief in the transformative
-                    power of accessible transportation. We recognize that traditional car ownership can be expensive,
-                    impractical, and environmentally unsustainable for many individuals, especially in urban areas where
-                    space is limited and public transit may not always suffice.
-
-                    We envision a future where transportation is not just a means to an end, but a gateway to new
-                    experiences and opportunities. By offering a diverse fleet of vehicles, ranging from fuel-efficient
-                    compact cars to spacious SUVs and eco-friendly hybrids, we cater to the diverse needs and
-                    preferences of our customers.
-                    At the heart of our motive is a deep-seated desire to make a positive impact on the world. By
-                    promoting shared mobility and reducing the number of vehicles on the road, we aim to alleviate
-                    traffic congestion, improve air quality, and contribute to a more sustainable future for generations
-                    to come.</h5>
-            </div>
-            <div class="col-lg-4 p-5">
-                <img src="./img/aboutUs/aboutus2.jpg" class="img-fluid aboutimg2" alt="" srcset="">
-            </div>
-        </div>
-    </div>
-
-    <!-- Team section -->
-    <div class="container-fluid backLight p-5">
-        <div>
-            <h1 class="text-center mb-3">
-                Company Founders
-                <img src="./img/user/image.png" alt="" srcset="">
-            </h1>
-        </div>
-        <div class="row  g-4 p-0">
-            <div class="col-lg-3 col-md-2 p-5 founderbox">
-                <img src="./img/founder/WhatsApp Image 2024-04-10 at 9.30.23 PM.jpeg"
-                    class="founderimg mx-auto d-block border-2 border border-dark" alt="" srcset="">
-                <h5 class="text-center mt-3">Strategic Visionary</h5>
-                <h4 class="text-center">Raj Patel</h4>
-            </div>
-            <div class="col-lg-3 col-md-2 p-5 founderbox">
-                <img src="./img/founder/WhatsApp Image 2024-04-10 at 9.27.55 PM.jpeg"
-                    class="founderimg mx-auto d-block border-2 border border-dark" alt="" srcset="">
-                <h5 class="text-center mt-3">Business Development & Partnerships</h5>
-                <h4 class="text-center">Neehal Hansoti</h4>
-            </div>
-            <div class="col-lg-3 col-md-2 p-5 founderbox">
-                <img src="./img/founder/WhatsApp Image 2024-04-10 at 9.35.51 PM.jpeg" class="founderimg mx-auto d-block border-2 border border-dark"
-                    alt="" srcset="">
-                <h5 class="text-center mt-3">Team Leadership</h5>
-                <h4 class="text-center">Pranav Pal</h4>
-            </div>
-            <div class="col-lg-3 col-md-2 p-5 founderbox">
-                <img src="./img/founder/WhatsApp Image 2024-04-10 at 9.36.58 PM.jpeg" class="founderimg mx-auto d-block border-2 border border-dark"
-                    alt="" srcset="">
-                <h5 class="text-center mt-3">Customer Experience Champion</h5>
-                <h4 class="text-center">Ayush Patel</h4>
-            </div>
-        </div>
-    </div>
 
     <!-- footer -->
     <footer class="footer px-5 py-3" id="footer">
@@ -232,7 +235,6 @@
     </footer>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/main.js"></script>
 </body>
 
 </html>

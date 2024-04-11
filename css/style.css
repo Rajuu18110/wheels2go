@@ -235,3 +235,17 @@
     background-position: center;
     height: 675px;
 }
+
+/* final process */
+.payback{
+    background-color: #ffffff83;
+    box-shadow: 0 0 5px 5px var(--bg-backDark);
+}
+.btnprocess{
+    background-color: var(--bg-backDark);
+    color: var(--bg-textOne);
+}
+.btnprocess:hover{
+    background-color: var(--bg-backLight);
+    color: var(--bg-textthird);
+}
