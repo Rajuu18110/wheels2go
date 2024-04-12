@@ -73,9 +73,10 @@
 /* search home */
 .searchhome{
     background-color: var(--bg-backLight);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover
 }
 .btnColor{
     background-color: var(--bg-backLight);
@@ -233,7 +234,6 @@
 /* login page */
 .loginback{
     background-position: center;
-    height: 675px;
 }
 
 /* final process */
@@ -248,4 +248,15 @@
 .btnprocess:hover{
     background-color: var(--bg-backLight);
     color: var(--bg-textthird);
+}
+
+/* booking */
+.bookingFilter{
+    border-right-style: solid;
+}
+@media (max-width: 768px) {
+
+    .bookingFilter{
+        border-right-style: none;
+    }
 }
