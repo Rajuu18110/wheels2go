@@ -7,6 +7,21 @@
 }
 .location{
     border: 8px double black;
+    color: var(--bg-textthird);
+}
+.location:hover{
+    background-color: white;
+}
+.queryback{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mapimg{
+    width: inherit;
+    border-bottom: 4px solid var(--bg-textthird);
 }
 .location:hover{
     border: 6px solid var(--bg-backDark);

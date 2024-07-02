@@ -1,15 +1,22 @@
 :root{
-    --bg-textOne: #FFF6E9;
-    --bg-five: #E0E1DD;
-    --bg-backDark: #0D1B2A;
-    --bg-textTwo: #3DFFFF;
-    --bg-backLight: #EEF5FF;
+    --bg-textOne: #ffffff;
+    --bg-texttwo: #CADCFC;
+    --bg-textthird: #000000;
+    --bg-textfour: #162e48;
+    --bg-backDark: #162e48;
+    --bg-backLight: #CADCFC;
 }
 .textOne{
     color: var(--bg-textOne);
 }
 .textTwo{
-    color: var(--bg-textTwo);
+    color: var(--bg-texttwo);
+}
+.textThird{
+    color: var(--bg-textthird);
+}
+.textFour{
+    color: var(--bg-textfour);
 }
 .backDark{
     background-color: var(--bg-backDark);
@@ -21,7 +28,7 @@
     background-color: var(--bg-backDark);
 }
 .navbarper .navlinks{
-    color: var(--bg-textTwo) !important;
+    color: var(--bg-backLight) !important;
 }
 .navbarper .navlinks:hover,
 .navbarper .navlinks.active{
@@ -31,17 +38,54 @@
     background-color: var(--bg-textOne) !important;
     color: var(--bg-backDark) !important;
 }
+.togglecolor{
+    background-color: var(--bg-textOne);
+}
+/* back to top */
+.backtotop{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    background-color: var(--bg-textOne);
+    cursor: pointer;
+    padding: 10px; 
+    border-radius: 50%; 
+}
+.backtotop img{
+    height: 32px;
+    width: 32px;
+}
+
+.backtotop:hover img{
+    animation: wheel 1s linear infinite;
+}
+@keyframes wheel {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
 /* search home */
 .searchhome{
     background-color: var(--bg-backLight);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
 }
 .btnColor{
-    background-color: var(--bg-backDark);
+    background-color: var(--bg-backLight);
     color: var(--bg-textTwo);
 }
 .btnColor:hover{
     background-color: var(--bg-textTwo);
-    color: var(--bg-backDark);
+    color: var(--bg-textOne);
+    border: 2px solid var(--bg-backLight);
 }
 .backScroll{
     min-height: 500px;
@@ -56,12 +100,17 @@
     background-color: var(--bg-backDark);
 }
 .homeCard:hover{
-    box-shadow: 0 0 0 5px var(--bg-textTwo);
+    box-shadow: 0 0 5px 5px var(--bg-textOne);
+}
+.btnColorMost{
+    background-color: var(--bg-backDark);
+    color: var(--bg-textOne);
+}
+.btnColorMost:hover{
+    background-color: var(--bg-backLight);
+    color: var(--bg-textthird);
 }
 /* testiminial*/
-.testimonial{
-    background-color: var(--bg-backLight);
-}
 .testiborder{
     border: 7px double var(--bg-backDark);
 }
@@ -173,4 +222,41 @@
 
 .footer{
     background-color: var(--bg-backDark);
+}
+.footlink{
+    text-decoration: none;
+}
+.footlink:hover{
+    color: var(--bg-texttwo);
+}
+
+
+/* login page */
+.loginback{
+    background-position: center;
+}
+
+/* final process */
+.payback{
+    background-color: #ffffff83;
+    box-shadow: 0 0 5px 5px var(--bg-backDark);
+}
+.btnprocess{
+    background-color: var(--bg-backDark);
+    color: var(--bg-textOne);
+}
+.btnprocess:hover{
+    background-color: var(--bg-backLight);
+    color: var(--bg-textthird);
+}
+
+/* booking */
+.bookingFilter{
+    border-right-style: solid;
+}
+@media (max-width: 768px) {
+
+    .bookingFilter{
+        border-right-style: none;
+    }
 }

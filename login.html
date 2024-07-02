@@ -4,74 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/login.css">
+    <title>Log In - Wheels2Go</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top navbarper">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Wheel2Go</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand navlinks" href="./index.html"><img src="./img/logo/logo.jpeg" alt="" srcset="" height="40px"></a>
+            <button class="navbar-toggler togglecolor" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" aria-current="page" href="./index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./aboutUs.html">About Us</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" href="./aboutUs.html">About Us</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Vehicles
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./cars.html">Cars</a></li>
-                            <li><a class="dropdown-item" href="./bikes.html">Bikes</a></li>
-                        </ul>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" href="./cars.html">Cars</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./booking.html">Booking</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" href="./booking.html">Booking</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./contactUs.html">Contact Us</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" href="./contactUs.html">Contact Us</a>
                     </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./login.html">Log In/Sign UP</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active navlinks" aria-current="page" href="./login.html">Log In</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <h2>Log In</h2>
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <div class="container-fluid p-5 loginback img-fluid" style="background-image: url('./img/road/road.jpg');">
+        <div class="row justify-content-center p-0 m-0 my-5 p-md-5 m-md-5">
+            <div class="col-lg-6 col-md-8 col-12 p-5" style="background-image: linear-gradient(rgba(255, 255, 255, 0.753), rgba(255, 255, 255, 0.753))">
+                <h1 class="text-center">Log In</h1>
+                <form method="post" action="./booking.html">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group form-check my-2">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary px-5 py-2">Log In</button>
+                </form>
+                <hr>
+                <p>Don't have Account? <a href="./signup.html" class="">Create Account</a></p>
             </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Log In</button>
-        </form>
+        </div>
     </div>
 
+    <!-- footer -->
+    <footer class="footer px-5 py-3" id="footer">
+        <div class="row m-0">
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">Vehicle Type</h3>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Sedan</a><br>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>SUV</a><br>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Mini Van</a><br>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Cargo Van</a><br>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Convertible</a><br>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Couple</a><br>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>PickUp Track</a><br>
+            </div>
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">Vehicle Company</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>BMW</a><br>
+                        <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Chevrolet</a><br>
+                        <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Ford</a><br>
+                        <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Honda</a><br>
+                        <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Kia</a><br>
+                        <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Lamborghini</a><br>
+                        <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Land Rover</a><br>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Lexus</a><br>
+                        <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Audi</a><br>
+                        <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Mazda</a><br>
+                        <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Mercedes</a><br>
+                        <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Porsche</a><br>
+                        <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Toyota</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">Company</h3>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Term&Condition</a><br>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Private policy</a><br>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Booking procedure</a><br>
+            </div>
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">Contact</h3>
+                <a href="http://" class="textOne footlink me-2"><i class="bi bi-facebook" style="font-size: 1.6rem;"></i></a>
+                <a href="http://" class="textOne footlink me-2"><i class="bi bi-whatsapp" style="font-size: 1.6rem;"></i></a>
+                <a href="http://" class="textOne footlink me-2"><i class="bi bi-envelope" style="font-size: 1.6rem;"></i></a>
+            </div>
+        </div>
+        <hr style="color: var(--bg-textOne)">
+        <div class="row p-0">
+            <div class="col-6 ps-4"><p class="textOne ">©wheels2go, all rights reserved.</p></div>
+            <div class="col-6 align-self-end"><p class="textOne ">Distributed By, PRAN</p></div>
+        </div>
+    </footer>
 
     <script src="./js/bootstrap.js"></script>
 </body>

@@ -4,56 +4,513 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Booking - Wheels2Go</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top navbarper">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Wheel2Go</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand navlinks" href="./index.html"><img src="./img/logo/logo.jpeg" alt="" srcset="" height="40px"></a>
+            <button class="navbar-toggler togglecolor" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" aria-current="page" href="./index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./aboutUs.html">About Us</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" href="./aboutUs.html">About Us</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Vehicles
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="./cars.html">Cars</a></li>
-                            <li><a class="dropdown-item" href="./bikes.html">Bikes</a></li>
-                        </ul>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" href="./cars.html">Cars</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./booking.html">Booking</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active navlinks" href="./booking.html">Booking</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contactUs.html">Contact Us</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" href="./contactUs.html">Contact Us</a>
                     </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Log In/Sign UP</a>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link navlinks" aria-current="page" href="./login.html">Log In</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
 
+    <!-- nevigate to top -->
+    <button onclick="topFunction()" id="backtotop" class="backtotop" title="Go to top">
+        <img src="./img/loader/wheel2.png" alt="" srcset="">
+    </button> 
+
+    <div class="row m-0">
+        <div class="col-lg-2 col-md-3 backLight bookingFilter">
+            <div class="flex-shrink-0 p-3">
+                <a href="/"
+                    class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+                    <span class="fs-5 fw-semibold">Filter</span>
+                </a>
+
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-2">
+                        <label for="inputState" class="form-label">location to pick car</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>select location</option>
+                            <option value="toronto">Toronto</option>
+                            <option value="mississauga">Mississauga</option>
+                            <option value="brampton">Brampton</option>
+                        </select>        
+                    </li>
+                    <li class="mb-2">
+                        <label for="datefrom" class="form-label">From:</label>
+                        <input type="date" class="form-control" id="datefrom">       
+                    </li>
+                    <li class="mb-2">
+                        <label for="dateto" class="form-label">To:</label>
+                        <input type="date" class="form-control" id="dateto">       
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#type-collapse" aria-expanded="true">
+                            <i class="bi bi-caret-right-fill me-1"></i>Car Type
+                        </button>
+                        <div class="collapse" id="type-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ms-3">
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="sedan">
+                                        <label class="form-check-label" for="sedan">Sedan</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="suv">
+                                        <label class="form-check-label" for="suv">SUV</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="pickuptruck">
+                                        <label class="form-check-label" for="pickuptruck">Pickup Truck</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="minivan">
+                                        <label class="form-check-label" for="minivan">Mini Van</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="covertible">
+                                        <label class="form-check-label" for="covertible">covertible</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="couple">
+                                        <label class="form-check-label" for="couple">Couple</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="cargovan">
+                                        <label class="form-check-label" for="cargovan">Cargo Van</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#maker-collapse" aria-expanded="true">
+                            <i class="bi bi-caret-right-fill me-1"></i>Car Maker
+                        </button>
+                        <div class="collapse" id="maker-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ms-3">
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="bmw">
+                                        <label class="form-check-label" for="bmw">BMW</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="chevrolet">
+                                        <label class="form-check-label" for="chevrolet">Chevrolet</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="ford">
+                                        <label class="form-check-label" for="ford">Ford</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="honda">
+                                        <label class="form-check-label" for="honda">Honda</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="kia">
+                                        <label class="form-check-label" for="kia">Kia</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="lamborghini">
+                                        <label class="form-check-label" for="lamborghini">Lamborghini</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="landrover">
+                                        <label class="form-check-label" for="landrover">Land Rover</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="lexus">
+                                        <label class="form-check-label" for="lexus">Lexus</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="audi">
+                                        <label class="form-check-label" for="audi">Audi</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="mazda">
+                                        <label class="form-check-label" for="mazda">Mazda</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="mercedes">
+                                        <label class="form-check-label" for="mercedes">Mercedes</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="porsche">
+                                        <label class="form-check-label" for="porsche">Porsche</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="toyota">
+                                        <label class="form-check-label" for="toyota">Toyota</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
+                            data-bs-toggle="collapse" data-bs-target="#fuel-collapse" aria-expanded="true">
+                            <i class="bi bi-caret-right-fill me-1"></i>Fuel Type
+                        </button>
+                        <div class="collapse" id="fuel-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ms-3">
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Hybrid">
+                                        <label class="form-check-label" for="Hybrid">Hybrid</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="electric">
+                                        <label class="form-check-label" for="electric">Electric</label>
+                                    </div>
+                                </li>
+                                <li class="link-body-emphasis text-decoration-none rounded">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="gus">
+                                        <label class="form-check-label" for="gus">Gus</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="border-top my-3"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-10 col-md-9 backLight">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 p-5 m-0">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/cars/bmw_520d_xdrive_touring_2024-1920x1080.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: BMW</h5>
+                            <p class="card-text m-0">Modal: 520 xdrive</p>
+                            <p class="card-text m-0">Capacity: 5 people</p>
+                            <p class="card-text">Fuel: Hybrid</p>
+                            <a href="./finalProcess.html" class="btn btnprocess btn-primary">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/cars/bmw_i5_m60_xdrive_touring_2024-1920x1080.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: BMW</h5>
+                            <p class="card-text m-0">Modal: i5 m60</p>
+                            <p class="card-text m-0">Capacity: 5 people</p>
+                            <p class="card-text">Fuel: Electric</p>
+                            <a href="./finalProcess.html" class="btn btnprocess btn-primary">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/cars/bmw_i7_xdrive60_protection_2024_5k-1920x1080.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: BMW</h5>
+                            <p class="card-text m-0">Modal: i7</p>
+                            <p class="card-text m-0">Capacity: 5 people</p>
+                            <p class="card-text">Fuel: Hybrid</p>
+                            <a href="./finalProcess.html" class="btn btnprocess btn-primary">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/cars/bmw_m4_2024-1920x1080.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: BMW</h5>
+                            <p class="card-text m-0">Modal: M4</p>
+                            <p class="card-text m-0">Capacity: 5 people</p>
+                            <p class="card-text">Fuel: Hybrid</p>
+                            <a href="./finalProcess.html" class="btn btnprocess btn-primary">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/cars/chevrolet_equinox_ev_3lt_2024_5k_2-1920x1080.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: Chevrolet</h5>
+                            <p class="card-text m-0">Modal: Equinox</p>
+                            <p class="card-text m-0">Capacity: 5 people</p>
+                            <p class="card-text">Fuel: Hybrid</p>
+                            <a href="./finalProcess.html" class="btn btnprocess btn-primary">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/cars/chevrolet_silverado_high_country_crew_cab_2023_8k-1920x1080.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: Chevrolet</h5>
+                            <p class="card-text m-0">Modal: Silverado</p>
+                            <p class="card-text m-0">Capacity: 5 people</p>
+                            <p class="card-text">Fuel: Hybrid</p>
+                            <a href="./finalProcess.html" class="btn btnprocess btn-primary">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/cars/chevrolet_trax_rs_2024_5k-1920x1080.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: Chevrolet</h5>
+                            <p class="card-text m-0">Modal: Trax RS</p>
+                            <p class="card-text m-0">Capacity: 5 people</p>
+                            <p class="card-text">Fuel: Hybrid</p>
+                            <a href="./finalProcess.html" class="btn btnprocess btn-primary">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/cars/ford_mustang_dark_horse_matte_clear_film_2024_8k-1920x1080.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: Ford</h5>
+                            <p class="card-text m-0">Modal: Mustang</p>
+                            <p class="card-text m-0">Capacity: 5 people</p>
+                            <p class="card-text">Fuel: Hybrid</p>
+                            <a href="./finalProcess.html" class="btn btnprocess btn-primary">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/cars/ford_mustang_gt_performance_2024_8k-1920x1080.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: Ford</h5>
+                            <p class="card-text m-0">Modal: Mustang GT</p>
+                            <p class="card-text m-0">Capacity: 5 people</p>
+                            <p class="card-text">Fuel: Hybrid</p>
+                            <a href="./finalProcess.html" class="btn btnprocess btn-primary">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/cars/honda_accord_ehev_sports_line_2024_8k-1920x1080.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: Honda</h5>
+                            <p class="card-text m-0">Modal: Accord</p>
+                            <p class="card-text m-0">Capacity: 5 people</p>
+                            <p class="card-text">Fuel: Hybrid</p>
+                            <a href="./finalProcess.html" class="btn btnprocess btn-primary">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/cars/honda_civic_type_r_2022_5k_2-1920x1080.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: Honda</h5>
+                            <p class="card-text m-0">Modal: Civic</p>
+                            <p class="card-text m-0">Capacity: 5 people</p>
+                            <p class="card-text">Fuel: Hybrid</p>
+                            <a href="./finalProcess.html" class="btn btnprocess btn-primary">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/cars/honda_hr_v_2022_4k-1920x1080.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: Honda</h5>
+                            <p class="card-text m-0">Modal: Hr V</p>
+                            <p class="card-text m-0">Capacity: 5 people</p>
+                            <p class="card-text">Fuel: Hybrid</p>
+                            <a href="./finalProcess.html" class="btn btnprocess btn-primary">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./img/cars/2024_honda_prologue_elite_4k-1920x1080.jpg" class="card-img-top"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Name: Honda</h5>
+                            <p class="card-text m-0">Modal: Prologue Elite</p>
+                            <p class="card-text m-0">Capacity: 5 people</p>
+                            <p class="card-text">Fuel: Hybrid</p>
+                            <a href="./finalProcess.html" class="btn btnprocess btn-primary">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer px-5 py-3" id="footer">
+        <div class="row m-0">
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">Vehicle Type</h3>
+                <a href="http://" class="textOne footlink"><i
+                        class="bi bi-car-front-fill textOne me-2"></i>Sedan</a><br>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>SUV</a><br>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Mini
+                    Van</a><br>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Cargo
+                    Van</a><br>
+                <a href="http://" class="textOne footlink"><i
+                        class="bi bi-car-front-fill textOne me-2"></i>Convertible</a><br>
+                <a href="http://" class="textOne footlink"><i
+                        class="bi bi-car-front-fill textOne me-2"></i>Couple</a><br>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>PickUp
+                    Track</a><br>
+            </div>
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">Vehicle Company</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="http://" class="textOne footlink"><i
+                                class="bi bi-car-front-fill textOne me-2"></i>BMW</a><br>
+                        <a href="http://" class="textOne footlink"><i
+                                class="bi bi-car-front-fill textOne me-2"></i>Chevrolet</a><br>
+                        <a href="http://" class="textOne footlink"><i
+                                class="bi bi-car-front-fill textOne me-2"></i>Ford</a><br>
+                        <a href="http://" class="textOne footlink"><i
+                                class="bi bi-car-front-fill textOne me-2"></i>Honda</a><br>
+                        <a href="http://" class="textOne footlink"><i
+                                class="bi bi-car-front-fill textOne me-2"></i>Kia</a><br>
+                        <a href="http://" class="textOne footlink"><i
+                                class="bi bi-car-front-fill textOne me-2"></i>Lamborghini</a><br>
+                        <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Land
+                            Rover</a><br>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="http://" class="textOne footlink"><i
+                                class="bi bi-car-front-fill textOne me-2"></i>Lexus</a><br>
+                        <a href="http://" class="textOne footlink"><i
+                                class="bi bi-car-front-fill textOne me-2"></i>Audi</a><br>
+                        <a href="http://" class="textOne footlink"><i
+                                class="bi bi-car-front-fill textOne me-2"></i>Mazda</a><br>
+                        <a href="http://" class="textOne footlink"><i
+                                class="bi bi-car-front-fill textOne me-2"></i>Mercedes</a><br>
+                        <a href="http://" class="textOne footlink"><i
+                                class="bi bi-car-front-fill textOne me-2"></i>Porsche</a><br>
+                        <a href="http://" class="textOne footlink"><i
+                                class="bi bi-car-front-fill textOne me-2"></i>Toyota</a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">Company</h3>
+                <a href="http://" class="textOne footlink"><i
+                        class="bi bi-car-front-fill textOne me-2"></i>Term&Condition</a><br>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Private
+                    policy</a><br>
+                <a href="http://" class="textOne footlink"><i class="bi bi-car-front-fill textOne me-2"></i>Booking
+                    procedure</a><br>
+            </div>
+            <div class="col-md-3 p-4">
+                <h3 class="textTwo">Contact</h3>
+                <a href="http://" class="textOne footlink me-2"><i class="bi bi-facebook"
+                        style="font-size: 1.6rem;"></i></a>
+                <a href="http://" class="textOne footlink me-2"><i class="bi bi-whatsapp"
+                        style="font-size: 1.6rem;"></i></a>
+                <a href="http://" class="textOne footlink me-2"><i class="bi bi-envelope"
+                        style="font-size: 1.6rem;"></i></a>
+            </div>
+        </div>
+        <hr style="color: var(--bg-textOne)">
+        <div class="row p-0">
+            <div class="col-6 ps-4">
+                <p class="textOne ">©wheels2go, all rights reserved.</p>
+            </div>
+            <div class="col-6 align-self-end">
+                <p class="textOne ">Distributed By, PRAN</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
